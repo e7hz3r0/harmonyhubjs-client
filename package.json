@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "debug": "^2.1.0",
-    "node-xmpp-client": "https://github.com/e7hz3r0/node-xmpp/tree/master/packages/node-xmpp-client",
+    "node-xmpp-client": "git://github.com/e7hz3r0/node-xmpp/tree/master/packages/node-xmpp-client.git",
     "node-xmpp-stanza": "^1.1.0",
     "q": "^1.1.2",
     "request": "^2.48.0",
