@@ -1,6 +1,6 @@
 var HarmonyHubClient = require('../index')
 
-HarmonyHubClient('192.168.1.12')
+HarmonyHubClient('192.168.1.146', 5222, 'ethan.urie@gmail.com', 'sees:punt')
   .then(function (harmonyClient) {
     return harmonyClient.getAvailableCommands()
       .then(function (commands) {

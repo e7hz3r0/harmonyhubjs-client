@@ -1,6 +1,6 @@
 var HarmonyHubClient = require('../index')
 
-HarmonyHubClient('192.168.1.106')
+HarmonyHubClient('192.168.1.146', 5222, 'ethan.urie@gmail.com', 'sees:punt')
   .then(function (harmonyClient) {
     return harmonyClient.isOff()
       .then(function (off) {
@@ -11,7 +11,7 @@ HarmonyHubClient('192.168.1.106')
             .then(function (activities) {
               // Get an activity with the name "Fernsehen" and trigger it:
               var watchTvActivity = activities
-                .filter(function (activity) { return activity.label.toLowerCase() === 'fernsehen' })
+                .filter(function (activity) { return activity.label.toLowerCase() === 'watch appletv' })
                 .pop()
 
               if (watchTvActivity) {
